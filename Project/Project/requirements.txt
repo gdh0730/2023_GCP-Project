@@ -1,0 +1,7 @@
+Flask==2.0.1
+google-cloud-vision==2.4.2
+opencv-python-headless
+google-cloud-aiplatform
+google-search-results
+flask-cors
+google-cloud-pubsub
