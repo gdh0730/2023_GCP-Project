@@ -1,0 +1,134 @@
+/* 전체 body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* page wrapper */
+.page-wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+/* icon */
+#icon {
+  width: 100px;
+}
+
+#항목 {
+  background-color:rgb(202, 202, 255);
+}
+
+/* 제목 */
+h1 {
+    font-size: 2rem;
+}
+
+/* hr 수평선 */
+hr {
+    margin: 1rem 0;
+    border-color: #eeeeee;
+}
+
+/* 캡처 & 다운로드 버튼 */
+#capture-btn {
+    background-color: #3F51B5;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size:14px; /* 버튼의 글자 크기 */
+    text-decoration:none; /* 버튼에 밑줄 제거 */
+    transition-duration:.3s; /* 전환 효과 지속 시간 설정 */
+    display: inline-block;
+}
+
+#capture-btn:hover {
+  transform-origin:center center;/* 변형 기준점 설정 (가운데) */ 
+  transform : scale(1.1);/*마우스를 올렸을 때 크기 조정*/
+}
+
+/* 이미지 wrapper */
+#imagebox {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+/* 이미지 */
+#captured-image {
+    max-width: 100%;
+}
+
+/* 출력 wrapper */
+#항목 {
+    background-color: #fbfcff;
+    border: 3px solid #bfe0ff;
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+/* 검색결과 wrapper */
+#response {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+/* responseBox 클래스와 하위 요소에 대한 스타일 */
+#container {
+  display: flex; /* 아이템을 가로로 배치합니다. */
+  justify-content: space-between; /* 아이템 사이의 간격을 정규화합니다. */
+  flex-wrap: wrap; /* 아이템 개수가 넘칠 경우 자동으로 한 줄로 내려갑니다. */
+}
+  
+#container li {
+  background-color:rgb(202, 202, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 제목과 링크를 상단으로 올리고 썸네일을 하단이나 상단에 위치할 경우에 하단으로 정렬합니다. */
+  align-items: center; /* 아이템들의 중앙 정렬을 합니다. */
+  width: 40%; /* 아이템의 폭을 설정합니다. */
+  margin-bottom: 1.5rem; /* 아이템 사이의 간격을 설정합니다. */
+  padding: 1rem; /* 아이템의 패딩을 설정합니다. */
+  border-radius: 1rem; /* 아이템의 각도를 둥글게 설정합니다. */
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2); /* 아이템에 그림자를 설정합니다. */
+  transition: transform 0.2s ease-in-out; /* 애니메이션 설정 */
+}
+  
+#container li:hover {
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3); /* 마우스 올렸을 때 그림자 변화를 줍니다. */
+  transform : scale(1.1);/*마우스를 올렸을 때 크기 조정*/
+}
+  
+#container p {
+  margin: 1rem 0; /* 제목과 링크 사이의 간격을 설정합니다. */
+}
+  
+#container a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 1rem 0; /* 제목과 링크 사이의 간격을 설정합니다. */
+  transition: transform 0.2s ease-in-out; /* 애니메이션 설정 */
+}
+  
+#container a:hover {
+  color: #000000;
+  transform: scale(1.1); /* 마우스 올렸을 때 크기 변경 */
+}
+  
+#container img {
+  width: 130px;; /* 크기 정규화 */
+  margin-top: 1rem; /* 썸네일과 링크 사이의 간격을 설정합니다. */
+}
